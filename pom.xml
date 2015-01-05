@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<name>standaloneParentPom</name>
+	
+	<groupId>com.jvs.parent.standaloneparent</groupId>
+	<artifactId>standaloneParentPom</artifactId>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>com.jvs.parent</groupId>
+		<artifactId>parentProject</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../parentPom/pom.xml</relativePath>
+	</parent>
+	
+	<modules>
+		<module>../MyJdkSamplesProject</module>
+		<module>../MyHibernateProject</module>
+		<module>../MyXMLHibernateProject</module>
+	</modules>
+	
+	<dependencyManagement>
+		<dependencies>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+	
+	</dependencies>	
+
+</project>
